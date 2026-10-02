@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Samir AI E-commerce Hub</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside><div class="brand">⚡ Samir<span>Hub</span></div><p class="muted">AI E-commerce Workspace</p>
+<nav><button class="nav active" data-page="dashboard">Dashboard</button><button class="nav" data-page="listing">AI Listing Generator</button><button class="nav" data-page="profit">Profit Calculator</button><button class="nav" data-page="tools">Quick Tools</button></nav>
+<div class="side-note">Built for marketplace work<br>Amazon • eBay • TikTok • Temu</div></aside>
+<main><header><div><p class="eyebrow">E-COMMERCE COMMAND CENTER</p><h1 id="title">Dashboard</h1></div><div class="pill">MVP v1</div></header>
+<section id="dashboard" class="page active"><div class="hero"><div><span class="badge">AI READY</span><h2>Your work, in one place.</h2><p>Generate listing copy, calculate margins and keep your marketplace workflow organized.</p></div><button class="primary jump" data-page="listing">Create Listing →</button></div>
+<div class="cards"><div class="card"><b>AI Listing</b><span>Title + bullets + description</span></div><div class="card"><b>Profit</b><span>Margin + ROI calculator</span></div><div class="card"><b>Quick Tools</b><span>SEO, replies and text helpers</span></div></div></section>
+<section id="listing" class="page"><div class="panel"><div class="panel-head"><div><h3>AI Listing Generator</h3><p>Enter product details and generate marketplace-ready copy.</p></div><select id="tone"><option>Professional</option><option>Premium</option><option>Simple</option><option>SEO Focused</option></select></div>
+<div class="grid2"><label>Product name<input id="product" placeholder="e.g. Stainless Steel Water Bottle"></label><label>Brand<input id="brand" placeholder="e.g. SAM Retail"></label><label class="full">Key features<textarea id="features" placeholder="Leak proof, 750ml, stainless steel, insulated..."></textarea></label><label>Marketplace<select id="market"><option>Amazon</option><option>eBay</option><option>TikTok Shop</option><option>Temu</option><option>Shopify</option></select></label><label>Keywords<input id="keywords" placeholder="water bottle, flask, gym, travel"></label></div>
+<button class="primary" id="generate">Generate Listing</button><div id="output" class="output hidden"></div></div></section>
+<section id="profit" class="page"><div class="panel"><h3>Profit Calculator</h3><div class="grid2"><label>Cost price<input id="cost" type="number" value="400"></label><label>Selling price<input id="sell" type="number" value="500"></label><label>Marketplace fees<input id="fees" type="number" value="50"></label><label>Shipping<input id="shipping" type="number" value="0"></label></div><button class="primary" id="calc">Calculate</button><div id="profitOut" class="stats"></div></div></section>
+<section id="tools" class="page"><div class="tools"><div class="tool"><h3>💬 Customer Reply</h3><textarea id="replyIn" placeholder="Paste customer message..."></textarea><button class="secondary" id="replyBtn">Draft Reply</button><div id="replyOut" class="miniout"></div></div><div class="tool"><h3>🔎 SEO Keywords</h3><input id="seoIn" placeholder="Product name"><button class="secondary" id="seoBtn">Suggest Keywords</button><div id="seoOut" class="miniout"></div></div></div></section>
+</main></div><script src="app.js"></script></body></html>
